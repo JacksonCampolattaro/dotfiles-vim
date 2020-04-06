@@ -13,6 +13,9 @@ Plug 'shougo/deoplete.nvim'
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
+" Automated commenting
+Plug 'preservim/nerdcommenter'
+
 " Smart number relative numbering
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
@@ -20,6 +23,7 @@ Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" Git integration
 Plug 'tpope/vim-fugitive'
 
 call plug#end()
