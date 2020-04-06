@@ -3,11 +3,10 @@
 " List of plugins to be installed
 call plug#begin()
 
-" True color Solarized theme
-Plug 'iCyMind/NeoSolarized'
-
 " Autocomplete engine
 Plug 'shougo/deoplete.nvim'
+Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
+Plug 'dense-analysis/ale'
 
 " Better file browsing
 Plug 'preservim/nerdtree'
@@ -37,6 +36,12 @@ set background=dark
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#auto_complete_start_length = 1
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" Language server settings
+let g:LanguageClient_serverCommands = {
+  \ 'cpp': ['clangd'],
+  \ }
+set signcolumn=yes
 
 " mouse support
 set mouse=a
