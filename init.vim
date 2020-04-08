@@ -8,6 +8,7 @@ Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'shougo/echodoc.vim'
 Plug 'shougo/neco-vim'
 Plug 'zchee/deoplete-clang'
+Plug 'zchee/deoplete-zsh'
 "Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
 "Plug 'autozimu/LanguageClient-neovim', {
     "\ 'branch': 'next',
@@ -38,7 +39,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
-"
+
 " Set my default colorscheme
 set termguicolors
 colorscheme NeoSolarized
@@ -58,12 +59,6 @@ call deoplete#custom#source('around', 'rank', 1)
 
 let g:echodoc#enable_at_startup = 1
 let g:echodoc#type = 'popup'
-
-
-" Language server settings
-"let g:LanguageClient_serverCommands = {
-  "\ 'cpp': ['clangd'],
-  "\ }
 
 set signcolumn=yes
 
